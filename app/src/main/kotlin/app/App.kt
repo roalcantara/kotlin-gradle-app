@@ -45,5 +45,6 @@ fun main() = runBlocking {
   runSuspendingFunctionAndReturnList()
   runStreamWithFlow()
   runFlowWhenCollect()
+  runFlowCancellation()
   run100kCoroutines()
 }
