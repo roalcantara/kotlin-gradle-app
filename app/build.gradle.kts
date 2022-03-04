@@ -48,3 +48,7 @@ application {
     // Define the main class for the application.
     mainClass.set("app.AppKt")
 }
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+  kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+}

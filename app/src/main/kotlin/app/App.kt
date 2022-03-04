@@ -36,5 +36,6 @@ fun main() = runBlocking {
   runSequentiallyByDefault()
   runConcurrentlyUsingAsync()
   runLazilyStartedAsync()
+  runAsyncStyleFunctions()
   run100kCoroutines()
 }
