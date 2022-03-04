@@ -30,4 +30,5 @@ fun main() = runBlocking {
   runSimpleCoroutine()
   launch { runSuspendingFunction() }
   println("[Main] Hello")
+  runCoroutineScopedFunction()
 }
