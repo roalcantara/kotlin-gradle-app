@@ -33,5 +33,6 @@ fun main() = runBlocking {
   runCoroutineScopedFunction()
   runMultipleConcurrentOperations()
   runExplicitJobs()
+  runSequentiallyByDefault()
   run100kCoroutines()
 }
