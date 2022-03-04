@@ -3,6 +3,9 @@
  */
 package app
 
+import kotlinx.coroutines.*
+import app.kroutines.*
+
 class App {
   val greeting: String
     get() {
@@ -12,7 +15,13 @@ class App {
 
 /*
   The main function is the entry point for the application.
+
+  runBlocking
+    - it means that the thread that runs it (in this case — the main thread)
+      gets blocked for the duration of the call, until all the coroutines inside
+      runBlocking { ... } complete their execution.
 */
-fun main() {
+fun main() = runBlocking {
   println(App().greeting)
+  runSimpleCoroutine()
 }
