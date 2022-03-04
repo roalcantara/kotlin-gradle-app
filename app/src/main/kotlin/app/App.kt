@@ -41,5 +41,6 @@ fun main() = runBlocking {
   runFailedConcurrent()
   runCoroutineDispatchers()
   runMultipleValuesWithCollections()
+  runSequenceIn100msEach()
   run100kCoroutines()
 }
