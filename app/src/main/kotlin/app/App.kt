@@ -35,5 +35,6 @@ fun main() = runBlocking {
   runExplicitJobs()
   runSequentiallyByDefault()
   runConcurrentlyUsingAsync()
+  runLazilyStartedAsync()
   run100kCoroutines()
 }
