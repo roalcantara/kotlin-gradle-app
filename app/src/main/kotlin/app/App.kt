@@ -32,4 +32,5 @@ fun main() = runBlocking {
   println("[Main] Hello")
   runCoroutineScopedFunction()
   runMultipleConcurrentOperations()
+  runExplicitJobs()
 }
