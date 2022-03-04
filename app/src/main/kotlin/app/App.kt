@@ -20,8 +20,14 @@ class App {
     - it means that the thread that runs it (in this case — the main thread)
       gets blocked for the duration of the call, until all the coroutines inside
       runBlocking { ... } complete their execution.
+
+  launch is a coroutine builder
+    - it launches a new coroutine concurrently with the rest of the code which continues to work independently
+    - it can only be used inside the scope of a coroutine
 */
 fun main() = runBlocking {
   println(App().greeting)
   runSimpleCoroutine()
+  launch { runSuspendingFunction() }
+  println("[Main] Hello")
 }
