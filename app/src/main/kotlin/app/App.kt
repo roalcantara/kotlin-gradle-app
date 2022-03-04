@@ -42,5 +42,6 @@ fun main() = runBlocking {
   runCoroutineDispatchers()
   runMultipleValuesWithCollections()
   runSequenceIn100msEach()
+  runSuspendingFunctionAndReturnList()
   run100kCoroutines()
 }
